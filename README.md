@@ -50,8 +50,8 @@ Auth    Comments    AI
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-equipo/project-manager-api.git
-cd project-manager-api
+git clone https://github.com/LaPulga1828/API-Proyectos.git
+cd API-Proyectos.git
 
 # Instalar dependencias
 npm install
@@ -194,27 +194,10 @@ project-manager-api/
 │   ├── utils/             # Utilidades generales
 │   ├── config/            # Configuraciones
 │   └── validators/        # Validaciones de entrada
-├── tests/                 # Pruebas unitarias e integración
 ├── docs/                  # Documentación adicional
-├── scripts/               # Scripts de utilidad
 └── package.json
 ```
 
-## 🧪 Testing
-
-```bash
-# Ejecutar todas las pruebas
-npm test
-
-# Ejecutar pruebas en modo watch
-npm run test:watch
-
-# Generar reporte de cobertura
-npm run test:coverage
-
-# Pruebas específicas
-npm test -- --grep "Auth"
-```
 
 ## 🚀 Despliegue
 
@@ -276,37 +259,13 @@ docker run -p 3000:3000 project-manager-api
 - [ ] Optimización de rendimiento
 - [ ] Documentación completa
 
-## 🤝 Contribución
-
-### Guías de Desarrollo
-
-1. **Fork** el repositorio
-2. **Crear** una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** a tu rama (`git push origin feature/AmazingFeature`)
-5. **Abrir** un Pull Request
-
-### Convenciones de Código
-
-```javascript
-// Usar camelCase para variables y funciones
-const userName = 'john_doe';
-
-// Usar PascalCase para clases y constructores
-class UserService {
-  constructor() {}
-}
-
-// Usar UPPER_SNAKE_CASE para constantes
-const MAX_RETRY_ATTEMPTS = 3;
-```
 
 ## 📞 Contacto y Soporte
 
 **Equipo de Desarrollo:**
-- **Tech Lead**: [Nombre] - email@example.com
-- **Backend Developer**: [Nombre] - email@example.com  
-- **AI Specialist**: [Nombre] - email@example.com
+- **Tech Lead**: Leidy Maria Morales Triana - rodrigueztascojoseluis@example.com
+- **Backend Developer**:Jose Luis Rodriguez Tasco - email@example.com  
+- **AI Specialist**:Marianela Duran Ayala - email@example.com
 
 **Links Útiles:**
 - [Documentación API](./docs/API.md)
