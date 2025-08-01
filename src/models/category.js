@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const categorieSchema = new mongoose.Schema({
+const categorySchema = new mongoose.Schema({
     _id: { type: mongoose.Schema.Types.ObjectId, required: true },
     name: { type: String, required: true },
     description: { type: String },
@@ -10,4 +10,6 @@ const categorieSchema = new mongoose.Schema({
     updatedAt: { type: Date },
 });
 
-module.exports = mongoose.model('Categorie', categorieSchema);
+export default mongoose.model("Category", categorySchema);
+
+/* tengo sueño */
