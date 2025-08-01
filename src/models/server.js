@@ -22,7 +22,7 @@ class Server{
     }
     routes(){
         //aqui toca llamar todos los archivos d rutas
-        this.app.use('/api/user',User)
+        this.app.use('/api/users',User)
     }
     listen(){
         this.app.listen(process.env.PORT,()=>{

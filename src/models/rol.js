@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const roleSchema = new mongoose.Schema({
+const rolSchema = new mongoose.Schema({
     _id: { type: mongoose.Schema.Types.ObjectId, required: true },
     name: {
         type: String,
@@ -14,4 +14,4 @@ const roleSchema = new mongoose.Schema({
     updatedAt: { type: Date },
 });
 
-export default mongoose.model("Role", roleSchema)
+export default mongoose.model("Rol", rolSchema)
