@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors'
 import { dbConnection } from '../database/config.js'
 //inportar todos los archivos de las rutas
-import users from '../models/user.js'
+import User from '../models/user.js'
 
 
 class Server{
@@ -22,7 +22,7 @@ class Server{
     }
     routes(){
         //aqui toca llamar todos los archivos d rutas
-        this.app.use('/api/user',users)
+        this.app.use('/api/user',User)
     }
     listen(){
         this.app.listen(process.env.PORT,()=>{
