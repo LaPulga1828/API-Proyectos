@@ -30,6 +30,12 @@ const userHttp = {
         try{}
         catch(error){}
     },
+
+    // PUT /api/users/:id/role - Cambiar rol (Admin)
+    userPutRole:async(req, res) => {
+        try{}
+        catch(error){}
+    },
 }
 
 export default userHttp

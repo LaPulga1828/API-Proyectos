@@ -1,12 +1,12 @@
 import {Router} from 'express'
-import usersHttp from "../controllers/user.js";
+import usersHttp from "../controllers/User.js"
 const router=Router()
 
 //GET /api/users - Listar usuarios (Admin)
 router.get('/',
     //Validaciones
     [],
-    //Controlador
+    //Controlador 
     usersHttp.userGet
 )
 
