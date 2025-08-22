@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const projectSchema = new Schema({
+const projectSchema = new mongoose.Schema({
     _id: { type: mongoose.Schema.Types.ObjectId, required: true },
     name: { type: String, required: true },
     description: { type: String },

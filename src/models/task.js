@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const taskSchema = new Schema({
+const taskSchema = new mongoose.Schema({
     _id: { type: mongoose.Schema.Types.ObjectId, required: true },
     title: { type: String, required: true },
     description: { type: String },

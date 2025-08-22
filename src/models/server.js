@@ -1,8 +1,16 @@
 import express from 'express';
 import cors from 'cors'
 import { dbConnection } from '../database/config.js'
-//inportar todos los archivos de las rutas
-import User from '../models/user.js'
+//importar todos los archivos de las rutas
+import userRoutes from '../routes/user.js';
+import authRoutes from '../routes/auth.js';
+import projectRoutes from '../routes/project.js';
+import taskRoutes from '../routes/task.js';
+import categoryRoutes from '../routes/category.js';
+import commentRoutes from '../routes/comment.js';
+import roleRoutes from '../routes/rol.js';
+import stateRoutes from '../routes/state.js';
+import aiRoutes from '../routes/ai.js';
 
 
 class Server{
@@ -22,7 +30,15 @@ class Server{
     }
     routes(){
         //aqui toca llamar todos los archivos d rutas
-        this.app.use('/api/users',User)
+        this.app.use('/api/auth', authRoutes);
+        this.app.use('/api/users', userRoutes);
+        this.app.use('/api/projects', projectRoutes);
+        this.app.use('/api/tasks', taskRoutes);
+        this.app.use('/api/categories', categoryRoutes);
+        this.app.use('/api/comments', commentRoutes);
+        this.app.use('/api/roles', roleRoutes);
+        this.app.use('/api/states', stateRoutes);
+        this.app.use('/api/ai', aiRoutes);
     }
     listen(){
         this.app.listen(process.env.PORT,()=>{
