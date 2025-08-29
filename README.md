@@ -263,9 +263,9 @@ docker run -p 3000:3000 project-manager-api
 ## 📞 Contacto y Soporte
 
 **Equipo de Desarrollo:**
-- **Tech Lead**: Leidy Maria Morales Triana - rodrigueztascojoseluis@example.com
+- **Tech Lead**: - rodrigueztascojoseluis@example.com
 - **Backend Developer**:Jose Luis Rodriguez Tasco - email@example.com  
-- **AI Specialist**:Marianela Duran Ayala - email@example.com
+- **AI Specialist**: - email@example.com
 
 **Links Útiles:**
 - [Documentación API](./docs/API.md)
